@@ -1,0 +1,27 @@
+{
+  "name": "serverless-aws-resolver",
+  "version": "1.0.0",
+  "description": "Resolve AWS variables in Serverless when you don't want to actually make a call to AWS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piersroberts/serverless-aws-resolver.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piersroberts/serverless-aws-resolver/issues"
+  },
+  "homepage": "https://github.com/piersroberts/serverless-aws-resolver#readme",
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2"
+  }
+}
