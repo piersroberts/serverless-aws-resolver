@@ -1,6 +1,6 @@
 {
   "name": "serverless-aws-resolver",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Resolve AWS variables in Serverless when you don't want to actually make a call to AWS",
   "main": "index.js",
   "scripts": {
@@ -10,8 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/piersroberts/serverless-aws-resolver.git"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "serverless",
+    "sls",
+    "aws",
+    "ssm",
+    "cloudformation",
+    "variables"
+  ],
+  "author": "Piers Roberts <piers.roberts+npm@duck.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/piersroberts/serverless-aws-resolver/issues"
   },
