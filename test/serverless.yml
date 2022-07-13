@@ -1,0 +1,27 @@
+service: test-service
+
+provider:
+  name: aws
+
+plugins:
+  - ../index.js
+
+functions:
+  test1:
+    name: ${ssm:/ssm_function_name}
+    handler: handler.default
+  test2:
+    name: ${aws:accountId}
+    handler: handler.default
+  test3:
+    name: ${aws:region}
+    handler: handler.default
+
+custom:
+  serverless-aws-resolver:
+    stages:
+      - dev # The stages where you want to enable this plugin
+    ssm: # SSM
+      /ssm_function_name: test_result_1
+    aws:
+      accountId: 123456789012

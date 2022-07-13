@@ -20,6 +20,8 @@ custom:
       service-resources-dev: # The Cloudformation stack name
         AlarmsSNSTopic: Foo # Key and value you want to provide
         SomethingElse: Bar
+    aws:
+      accountId: 123456789012 # Currently only accountId is the only supported AWS variable
 ```
 
 ## Todo

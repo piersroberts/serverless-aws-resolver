@@ -1,12 +1,12 @@
 const resolvers = require("./src/resolvers");
+const PLUGIN_NAME = "serverless-aws-resolver";
 
 class Plugin {
   constructor(serverless, options) {
     this.serverless = serverless;
     this.service = serverless.service;
     this.config =
-      (this.service.custom && this.service.custom["serverless-aws-resolver"]) ||
-      {};
+      (this.service.custom && this.service.custom[PLUGIN_NAME]) || {};
     this.stage = serverless.service.provider.stage;
 
     if (this.config.stages && !this.config.stages.includes(this.stage)) {

@@ -24,6 +24,16 @@ const resolvers = {
       };
     },
   },
+  STS: {
+    configKey: "aws",
+    getCallerIdentity: (params, { accountId, arn, userId }) => {
+      return {
+        Arn: arn,
+        Account: accountId,
+        UserId: userId,
+      };
+    },
+  },
 };
 
 module.exports = resolvers;

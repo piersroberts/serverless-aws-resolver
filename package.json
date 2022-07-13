@@ -1,6 +1,6 @@
 {
   "name": "serverless-aws-resolver",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Resolve AWS variables in Serverless when you don't want to actually make a call to AWS",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,7 @@
   },
   "keywords": [
     "serverless",
+    "serverless plugin",
     "sls",
     "aws",
     "ssm",
